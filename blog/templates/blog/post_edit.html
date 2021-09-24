@@ -1,0 +1,40 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<div class="post container">
+    {% if 'edit' in request.build_absolute_uri %}
+    <h3 class="text-center text-primary fw-bold pt-3">Edit Post</h3>
+    {% else %}
+    <h3 class="text-center text-primary fw-bold pt-3">New Post</h3>
+    {% endif %}
+    <div class="border border-primary border-2 m-3">
+
+        <form class=" d-flex flex-column justify-content-center align-items-center" method="POST">
+            {% csrf_token %}
+            <!-- {{form.as_p}} -->
+            {% for field in form %}
+            <div class="w-50">
+
+                <div class="fw-bold fs-5 ms-3 mb-2">{{field.label_tag}}</div>
+                <div class=" form-control form-control-lg  w-75 mb-3 ms-3 col-3">
+                    {{field}}
+                </div>
+
+            </div>
+            {% endfor %}
+
+            <div class="w-50 ms-5">
+                {% if 'edit' in request.build_absolute_uri %}
+                <a class="btn btn-primary w-25  mb-3" href="{% url 'post_detail' pk=pk %}">Cancel</a>
+                {% endif %}
+                <button class="btn btn-primary w-25 mb-3" type='submit'>Save</buttom>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

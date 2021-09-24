@@ -1,0 +1,141 @@
+:root {
+
+    --body-bg:rgb(27, 63, 239) !important;
+}
+
+body{
+    background: rgb(179, 189, 242) !important;
+}
+
+#header{
+    background: rgb(10, 41, 198);
+    color: #f7f6f6;
+}
+div.breadcrumbs {
+    background: rgb(10, 25, 104);
+    padding: 10px 40px;
+    border: none;
+    color: var(--breadcrumbs-fg);
+    text-align: left;
+}
+#head{
+  
+    font-weight: 700;
+}
+#branding .branding_new{
+display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#branding .branding_new img{
+margin-right: 10px;
+}
+#branding .branding_new p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#content-related{
+    background: rgb(12, 57, 172) !important; 
+    color: #ffffff;
+}
+#content h1{
+    color: rgb(12, 57, 172);
+    font-weight: bold;
+}
+.module {
+    border: none;
+    margin-bottom: 30px;
+    background: rgb(12, 57, 172)!important ;
+}
+#toolbar {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-top: 1px solid var(--hairline-color);
+    border-bottom: 1px solid var(--hairline-color);
+    background: rgb(10, 41, 198) !important ;
+    color: var(--body-quiet-color);
+}
+ #searchbar {
+    background: rgb(179, 189, 242) !important;
+ }
+#changelist-filter {
+    flex: 0 0 240px;
+    order: 1;
+    background: rgb(7, 42, 130) !important; 
+    border-left: none;
+    margin: 0 0 0 30px;
+}
+
+#changelist .actions {
+    padding: 10px;
+    background: rgb(12, 57, 172)!important ;
+    border-top: none;
+    border-bottom: none;
+    line-height: 24px;
+    color: var(--body-quiet-color);
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    background: rgb(7, 42, 130) !important; 
+}
+th,td {
+    padding: 5px 10px;
+    line-height: normal;
+    text-transform: uppercase;
+    background: rgb(7, 42, 130) !important; 
+}
+#nav-sidebar {
+    background: rgb(12, 57, 172)!important ;
+}
+#changelist .paginator{
+    background: rgb(7, 42, 130) !important; 
+}
+
+#changelist .actions select{
+    background: rgb(179, 189, 242) !important;
+}
+#changelist-filter li.selected{
+    border-left: 5px solid rgb(10, 25, 104) !important;;
+   
+}
+.module h2, .module caption, .inline-group h2 {
+    margin: 0;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    background: rgb(12, 57, 172) ;
+    color: var(--header-link-color);
+}
+
+.login .submit-row{
+    padding:0px !important;
+    float: right;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: rgb(10, 41, 198) !important;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.object-tools a:link, .object-tools a:visited {
+    display: block;
+    float: left;
+    padding: 3px 12px;
+    background: rgb(10, 41, 198) !important;
+    color: var(--object-tools-fg);
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.toggle-nav-sidebar{
+    background: rgb(10, 41, 198) !important;
+}

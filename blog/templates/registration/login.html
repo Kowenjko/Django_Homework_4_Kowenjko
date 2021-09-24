@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h3 class="text-center text-primary fw-bold pt-3">Log in</h3>
+<div class="container">
+
+    <div class="border border-primary border-2 m-3">
+
+        <form class="d-flex flex-column justify-content-center align-items-center " method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="w-25">
+                <div class="fw-bold fs-5 ms-3 mb-2">{{field.label_tag}}</div>
+                <div class=" form-control form-control-lg  mb-3 ms-3 ">
+                    {{field}}
+                </div>
+            </div>
+            {% endfor %}
+            <div>
+                <button class="btn btn-primary  mb-3 px-5" type="submit">Log in</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
